@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMoods - Your Preferences</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="preferences-container">
+
+        <div class="preferences-header">
+            <div class="logo">CineMoods</div>
+
+            <h1>Tell us what you love 🎬</h1>
+
+            <p>
+                Choose your favourite languages, genres and actors.
+                We'll use them to personalize your recommendations.
+            </p>
+        </div>
+
+
+        <!-- Languages -->
+
+        <section class="preference-section">
+
+            <h2>🌍 Languages</h2>
+
+            <div class="options">
+
+                <label>
+                    <input type="checkbox" value="Telugu">
+                    Telugu
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Tamil">
+                    Tamil
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Hindi">
+                    Hindi
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Malayalam">
+                    Malayalam
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Kannada">
+                    Kannada
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Bengali">
+                    Bengali
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Marathi">
+                    Marathi
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Korean">
+                    Korean
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Japanese">
+                    Japanese
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Chinese">
+                    Chinese
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Spanish">
+                    Spanish
+                </label>
+
+                <label>
+                    <input type="checkbox" value="English">
+                    English
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Genres -->
+
+        <section class="preference-section">
+
+            <h2>🎭 Genres</h2>
+
+            <div class="options">
+
+                <label>
+                    <input type="checkbox" value="Romance">
+                    Romance
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Comedy">
+                    Comedy
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Thriller">
+                    Thriller
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Action">
+                    Action
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Drama">
+                    Drama
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Horror">
+                    Horror
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Mystery">
+                    Mystery
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Sci-Fi">
+                    Sci-Fi
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Actors -->
+
+        <section class="preference-section">
+
+            <h2>⭐ Favourite Actors</h2>
+
+            <div class="options">
+
+                <label>
+                    <input type="checkbox" value="Nani">
+                    Nani
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Dulquer Salmaan">
+                    Dulquer Salmaan
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Samantha">
+                    Samantha
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Vijay Deverakonda">
+                    Vijay Deverakonda
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Mohanlal">
+                    Mohanlal
+                </label>
+
+                <label>
+                    <input type="checkbox" value="Fahadh Faasil">
+                    Fahadh Faasil
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <button class="save-preferences" onclick="savePreferences()">
+            Continue →
+        </button>
+
+    </div>
+
+
+    <script>
+function savePreferences() {
+
+    alert("Preferences saved!");
+
+    window.location.href = "home.html";
+
+}
+
+    </script>
+
+</body>
+</html>

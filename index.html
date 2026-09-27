@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineMoods - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="welcome-section">
+
+            <div class="logo">
+                CineMoods
+            </div>
+
+            <div class="welcome-content">
+
+                <span class="eyebrow">
+                    YOUR PERSONAL CINEMA
+                </span>
+
+                <h1>
+                    Your mood.<br>
+                    Your movies.
+                </h1>
+
+                <p>
+                    Discover movies and web series based on
+                    your languages, favourite genres and actors.
+                </p>
+
+                <div class="movie-icons">
+                    🎬 &nbsp; 🍿 &nbsp; 🎥
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="auth-box">
+
+            <div class="auth-header">
+
+                <span class="auth-label">
+                    CINE<span>MOODS</span>
+                </span>
+
+                <h2 id="formTitle">
+                    Welcome Back
+                </h2>
+
+                <p id="formSubtitle">
+                    Login to continue your cinematic journey.
+                </p>
+
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <form id="loginForm">
+
+                <div class="input-group">
+
+                    <label for="loginEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- SIGNUP -->
+
+            <form
+                id="signupForm"
+                class="hidden"
+            >
+
+                <div class="input-group">
+
+                    <label for="signupName">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="signupName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signupEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="signupPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="signupPassword"
+                        placeholder="Create a password"
+                        minlength="6"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="auth-button"
+                >
+                    Create Account
+                </button>
+
+            </form>
+
+
+            <div class="switch-form">
+
+                <span id="switchText">
+                    Don't have an account?
+                </span>
+
+                <button
+                    type="button"
+                    id="switchButton"
+                >
+                    Sign Up
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

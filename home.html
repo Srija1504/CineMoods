@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CineMoods</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="cinema-nav">
+
+    <div class="cinema-logo">
+        Cine<span>Moods</span>
+    </div>
+
+
+    <nav class="main-nav">
+
+        <a
+            href="#"
+            class="active"
+        >
+            Home
+        </a>
+
+        <a href="#movies">
+            Movies
+        </a>
+
+        <a href="#movies">
+            Web Series
+        </a>
+
+        <a href="#my-list">
+            My List
+        </a>
+
+    </nav>
+
+
+    <div class="nav-actions">
+
+        <button
+            class="search-button"
+            aria-label="Search"
+        >
+            🔍
+        </button>
+
+
+        <button
+            class="profile-button"
+            aria-label="Profile"
+        >
+            S
+        </button>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="cinema-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            ✦ PICKED FOR YOUR MOOD
+        </span>
+
+
+        <h1>
+            Your mood.<br>
+            Your story.
+        </h1>
+
+
+        <p>
+            Discover movies and series that feel
+            exactly right for you.
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <button
+                class="primary-button"
+                onclick="showMessage('Watch feature coming next!')"
+            >
+                ▶ Watch Now
+            </button>
+
+
+            <button
+                class="secondary-button"
+                onclick="showMessage('Your list feature is coming next!')"
+            >
+                ＋ My List
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MOOD
+===================================================== -->
+
+<section class="mood-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                EXPLORE
+            </span>
+
+            <h2>
+                What's your mood?
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="mood-row">
+
+        <button
+            class="mood-card"
+            onclick="filterMood('Romance')"
+        >
+
+            <strong>
+                ♡
+            </strong>
+
+            <span>
+                Romantic
+            </span>
+
+        </button>
+
+
+        <button
+            class="mood-card"
+            onclick="filterMood('Feel Good')"
+        >
+
+            <strong>
+                ☀
+            </strong>
+
+            <span>
+                Feel Good
+            </span>
+
+        </button>
+
+
+        <button
+            class="mood-card"
+            onclick="filterMood('Thriller')"
+        >
+
+            <strong>
+                ◈
+            </strong>
+
+            <span>
+                Thrilling
+            </span>
+
+        </button>
+
+
+        <button
+            class="mood-card"
+            onclick="filterMood('Mystery')"
+        >
+
+            <strong>
+                ☾
+            </strong>
+
+            <span>
+                Dark & Mystery
+            </span>
+
+        </button>
+
+
+        <button
+            class="mood-card"
+            onclick="filterMood('Something New')"
+        >
+
+            <strong>
+                ✦
+            </strong>
+
+            <span>
+                Something New
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MOVIES
+===================================================== -->
+
+<section
+    class="content-section"
+    id="movies"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                CURATED FOR YOU
+            </span>
+
+            <h2>
+                Because you like these
+            </h2>
+
+        </div>
+
+
+        <button
+            class="view-all"
+            onclick="loadMovies()"
+        >
+            Refresh →
+        </button>
+
+    </div>
+
+
+    <div
+        class="poster-row"
+        id="movieContainer"
+    >
+
+        <!-- Movies will load here -->
+
+        <article class="poster-card">
+
+            <div class="poster-image poster-one">
+
+                <span>
+                    01
+                </span>
+
+            </div>
+
+            <h3>
+                Discovering movies...
+            </h3>
+
+            <p>
+                <span class="language-tag korean-tag">
+                    CineMoods
+                </span>
+            </p>
+
+        </article>
+
+
+        <article class="poster-card">
+
+            <div class="poster-image poster-two">
+
+                <span>
+                    02
+                </span>
+
+            </div>
+
+            <h3>
+                Loading your cinema...
+            </h3>
+
+            <p>
+                <span class="language-tag telugu-tag">
+                    CineMoods
+                </span>
+            </p>
+
+        </article>
+
+
+        <article class="poster-card">
+
+            <div class="poster-image poster-three">
+
+                <span>
+                    03
+                </span>
+
+            </div>
+
+            <h3>
+                Your recommendations
+            </h3>
+
+            <p>
+                <span class="language-tag hindi-tag">
+                    CineMoods
+                </span>
+            </p>
+
+        </article>
+
+
+        <article class="poster-card">
+
+            <div class="poster-image poster-four">
+
+                <span>
+                    04
+                </span>
+
+            </div>
+
+            <h3>
+                Stories await
+            </h3>
+
+            <p>
+                <span class="language-tag japanese-tag">
+                    CineMoods
+                </span>
+            </p>
+
+        </article>
+
+
+        <article class="poster-card">
+
+            <div class="poster-image poster-five">
+
+                <span>
+                    05
+                </span>
+
+            </div>
+
+            <h3>
+                Something special
+            </h3>
+
+            <p>
+                <span class="language-tag malayalam-tag">
+                    CineMoods
+                </span>
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LANGUAGES
+===================================================== -->
+
+<section class="content-section">
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                YOUR LANGUAGES
+            </span>
+
+            <h2>
+                Stories from everywhere
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <div class="language-row">
+
+        <button
+            class="lang-telugu"
+            onclick="selectLanguage('Telugu')"
+        >
+            Telugu
+        </button>
+
+
+        <button
+            class="lang-tamil"
+            onclick="selectLanguage('Tamil')"
+        >
+            Tamil
+        </button>
+
+
+        <button
+            class="lang-hindi"
+            onclick="selectLanguage('Hindi')"
+        >
+            Hindi
+        </button>
+
+
+        <button
+            class="lang-malayalam"
+            onclick="selectLanguage('Malayalam')"
+        >
+            Malayalam
+        </button>
+
+
+        <button
+            class="lang-kannada"
+            onclick="selectLanguage('Kannada')"
+        >
+            Kannada
+        </button>
+
+
+        <button
+            class="lang-bengali"
+            onclick="selectLanguage('Bengali')"
+        >
+            Bengali
+        </button>
+
+
+        <button
+            class="lang-marathi"
+            onclick="selectLanguage('Marathi')"
+        >
+            Marathi
+        </button>
+
+
+        <button
+            class="lang-korean"
+            onclick="selectLanguage('Korean')"
+        >
+            Korean
+        </button>
+
+
+        <button
+            class="lang-japanese"
+            onclick="selectLanguage('Japanese')"
+        >
+            Japanese
+        </button>
+
+
+        <button
+            class="lang-chinese"
+            onclick="selectLanguage('Chinese')"
+        >
+            Chinese
+        </button>
+
+
+        <button
+            class="lang-spanish"
+            onclick="selectLanguage('Spanish')"
+        >
+            Spanish
+        </button>
+
+
+        <button
+            class="lang-english"
+            onclick="selectLanguage('English')"
+        >
+            English
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MY LIST
+===================================================== -->
+
+<section
+    class="content-section"
+    id="my-list"
+>
+
+    <div class="section-heading">
+
+        <div>
+
+            <span>
+                YOUR COLLECTION
+            </span>
+
+            <h2>
+                My List
+            </h2>
+
+        </div>
+
+    </div>
+
+
+    <p
+        style="
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 14px;
+        "
+    >
+        Movies you add to your personal list will
+        appear here.
+    </p>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="cinema-footer">
+
+    <div>
+
+        <div class="cinema-logo">
+            Cine<span>Moods</span>
+        </div>
+
+        <p>
+            Movies that match your mood.
+        </p>
+
+    </div>
+
+
+    <p>
+        Movie data powered by TMDB.
+    </p>
+
+</footer>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     SEARCH OVERLAY
+===================================================== -->
+
+<script>
+
+const searchButton =
+    document.querySelector(".search-button");
+
+
+searchButton.addEventListener(
+    "click",
+    function () {
+
+        const searchBox =
+            document.createElement("div");
+
+
+        searchBox.className =
+            "search-overlay";
+
+
+        searchBox.innerHTML = `
+
+            <div class="search-container">
+
+                <button
+                    class="close-search"
+                >
+                    ✕
+                </button>
+
+
+                <h2>
+                    What are you in the mood for?
+                </h2>
+
+
+                <input
+                    type="text"
+                    id="movieSearch"
+                    placeholder="Search movies, series, actors..."
+                    autofocus
+                >
+
+
+                <p>
+                    Type a movie or series name and press Enter.
+                </p>
+
+            </div>
+
+        `;
+
+
+        document.body.appendChild(
+            searchBox
+        );
+
+
+        const closeButton =
+            searchBox.querySelector(
+                ".close-search"
+            );
+
+
+        closeButton.addEventListener(
+            "click",
+            function () {
+
+                searchBox.remove();
+
+            }
+        );
+
+
+        const input =
+            searchBox.querySelector(
+                "#movieSearch"
+            );
+
+
+        input.addEventListener(
+            "keydown",
+            function (event) {
+
+                if (
+                    event.key === "Enter"
+                ) {
+
+                    searchMovies(
+                        input.value
+                    );
+
+                }
+
+            }
+        );
+
+    }
+);
+
+
+// =========================================================
+// SEARCH MOVIES
+// =========================================================
+
+async function searchMovies(query) {
+
+    if (!query.trim()) {
+
+        alert(
+            "Please enter a movie or series name."
+        );
+
+        return;
+    }
+
+
+    try {
+
+        const response =
+            await fetch(
+                "http://localhost:5000/api/search?query=" +
+                encodeURIComponent(query)
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if (!data.success) {
+
+            alert(
+                data.message
+            );
+
+            return;
+        }
+
+
+        document.querySelector(
+            ".search-overlay"
+        )?.remove();
+
+
+        renderMovies(
+            data.results
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Unable to search right now."
+        );
+
+    }
+
+}
+
+
+// =========================================================
+// LOAD MOVIES
+// =========================================================
+
+async function loadMovies() {
+
+    try {
+
+        const response =
+            await fetch(
+                "http://localhost:5000/api/movies"
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if (
+            data.success &&
+            data.results.length > 0
+        ) {
+
+            renderMovies(
+                data.results
+            );
+
+        }
+
+    } catch (error) {
+
+        console.log(
+            "TMDB movies are not connected yet."
+        );
+
+    }
+
+}
+
+
+// =========================================================
+// RENDER MOVIES
+// =========================================================
+
+function renderMovies(movies) {
+
+    const container =
+        document.getElementById(
+            "movieContainer"
+        );
+
+
+    if (!movies.length) {
+
+        container.innerHTML = `
+            <p style="color:var(--muted);">
+                No movies found.
+            </p>
+        `;
+
+        return;
+    }
+
+
+    container.innerHTML =
+        movies
+            .slice(0, 10)
+            .map(
+                (movie, index) => {
+
+                    const title =
+                        movie.title ||
+                        movie.name ||
+                        "Untitled";
+
+
+                    const image =
+                        movie.poster_path
+                            ? "https://image.tmdb.org/t/p/w500" +
+                              movie.poster_path
+                            : "";
+
+
+                    const date =
+                        movie.release_date ||
+                        movie.first_air_date ||
+                        "";
+
+
+                    return `
+
+                        <article
+                            class="poster-card"
+                        >
+
+                            <div
+                                class="poster-image"
+                                style="
+                                    background:
+                                    ${image
+                                        ? `url('${image}') center/cover`
+                                        : "linear-gradient(145deg,#29223f,#11152e)"
+                                    };
+                                "
+                            >
+
+                                <span>
+                                    ${String(
+                                        index + 1
+                                    ).padStart(2, "0")}
+                                </span>
+
+
+                                <div
+                                    class="poster-overlay"
+                                >
+
+                                    <button
+                                        class="card-play"
+                                        onclick="
+                                            showMovieDetails(
+                                                ${movie.id}
+                                            )
+                                        "
+                                    >
+                                        ▶
+                                    </button>
+
+
+                                    <button
+                                        class="card-list"
+                                        onclick="
+                                            addToList(
+                                                ${movie.id},
+                                                '${title.replace(
+                                                    /'/g,
+                                                    "\\'"
+                                                )}'
+                                            )
+                                        "
+                                    >
+                                        ＋
+                                    </button>
+
+                                </div>
+
+                            </div>
+
+
+                            <h3>
+                                ${title}
+                            </h3>
+
+
+                            <p>
+                                ${date
+                                    ? date.substring(0, 4)
+                                    : "Movie"
+                                }
+                            </p>
+
+                        </article>
+
+                    `;
+
+                }
+            )
+            .join("");
+
+}
+
+
+// =========================================================
+// LANGUAGE
+// =========================================================
+
+function selectLanguage(language) {
+
+    localStorage.setItem(
+        "selectedLanguage",
+        language
+    );
+
+
+    showMessage(
+        "Showing " +
+        language +
+        " stories next."
+    );
+
+}
+
+
+// =========================================================
+// MOOD
+// =========================================================
+
+function filterMood(mood) {
+
+    localStorage.setItem(
+        "selectedMood",
+        mood
+    );
+
+
+    showMessage(
+        mood +
+        " recommendations will be personalized next."
+    );
+
+}
+
+
+// =========================================================
+// MY LIST
+// =========================================================
+
+function addToList(id, title) {
+
+    const list =
+        JSON.parse(
+            localStorage.getItem(
+                "cinemoodsList"
+            )
+        ) || [];
+
+
+    const exists =
+        list.some(
+            movie => movie.id === id
+        );
+
+
+    if (!exists) {
+
+        list.push({
+            id,
+            title
+        });
+
+
+        localStorage.setItem(
+            "cinemoodsList",
+            JSON.stringify(list)
+        );
+
+
+        showMessage(
+            title +
+            " added to My List."
+        );
+
+    } else {
+
+        showMessage(
+            title +
+            " is already in My List."
+        );
+
+    }
+
+}
+
+
+// =========================================================
+// MOVIE DETAILS
+// =========================================================
+
+async function showMovieDetails(id) {
+
+    try {
+
+        const response =
+            await fetch(
+                "http://localhost:5000/api/movie/" +
+                id
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if (!data.success) {
+
+            alert(
+                data.message
+            );
+
+            return;
+        }
+
+
+        const movie =
+            data.movie;
+
+
+        alert(
+            movie.title +
+            "\n\n" +
+            (
+                movie.overview ||
+                "No description available."
+            )
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        alert(
+            "Unable to load movie details."
+        );
+
+    }
+
+}
+
+
+// =========================================================
+// MESSAGE
+// =========================================================
+
+function showMessage(message) {
+
+    alert(message);
+
+}
+
+
+// =========================================================
+// INITIAL LOAD
+// =========================================================
+
+loadMovies();
+
+</script>
+
+
+</body>
+
+</html>
